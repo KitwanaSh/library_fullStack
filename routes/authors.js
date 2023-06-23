@@ -13,7 +13,7 @@ router.get('/new', (req, res) => {
 
 // Create Author route
 router.post('/', (req, res) => {
-    res.send('Create')
+    res.send(req.body.name)
 })
 
 module.exports = router
